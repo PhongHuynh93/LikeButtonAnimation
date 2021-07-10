@@ -141,8 +141,6 @@ class LikeAnimButton @JvmOverloads constructor(
             }
         } else {
             this.uiState = uiState
-            // trigger all factor to 0 or 1 depend on isReverse
-            // trigger invalidate to redraw
             fraction = 0f
             invalidate()
         }

@@ -53,7 +53,6 @@ class LikeAnimButton @JvmOverloads constructor(
     }
 
     private fun getRipplePaint() = paint.apply {
-        xfermode = srcInMode
         color = Color.GREEN
     }
 
@@ -129,9 +128,6 @@ class LikeAnimButton @JvmOverloads constructor(
 
     private var uiState: UIState = UIState.UnLike
 
-    /**
-     *
-     */
     fun setUIState(uiState: UIState, isAnim: Boolean) {
         updateBgColor(uiState)
         if (this.uiState == UIState.Animating) {
